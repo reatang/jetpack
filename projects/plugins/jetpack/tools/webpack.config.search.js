@@ -33,7 +33,7 @@ const baseWebpackConfig = getBaseWebpackConfig(
 				require.resolve( 'abortcontroller-polyfill/dist/polyfill-patch-fetch' ),
 			],
 		},
-		'output-chunk-filename': 'jp-search.chunk-[name]-[hash].min.js',
+		'output-chunk-filename': 'jp-search.chunk-[name].min.js?h=[hash]',
 		'output-filename': 'jp-search-[name].bundle.js',
 		'output-path': path.join( __dirname, '../_inc/build/instant-search' ),
 	}
