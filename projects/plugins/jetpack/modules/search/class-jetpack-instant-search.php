@@ -184,22 +184,6 @@ class Jetpack_Instant_Search extends Jetpack_Search {
 	}
 
 	/**
-	 * Test if any of the files don't exist.
-	 *
-	 * @param array $files - Files to check.
-	 *
-	 * @return boolean - True if any of the files do not exist.
-	 */
-	protected function any_files_not_exist( $files ) {
-		foreach ( $files as $file ) {
-			if ( ! file_exists( $file ) ) {
-				return true;
-			}
-		}
-		return false;
-	}
-
-	/**
 	 * Passes options to the polyfill loader script.
 	 *
 	 * @param string $polyfill_payload_path - Absolute path to the IE11 polyfill payload.
